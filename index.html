@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Shoe Store</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+        
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('c:/Users/hyper/Desktop/تنزيل (1).jpeg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 20rem 15rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            width: 80%; 
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .about {
+            background-color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .contact {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: 2rem auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input, textarea {
+            padding: 0.5rem;
+            border-radius: 4px;
+            border: none;
+        }
+
+        button {
+            background-color: #ffd700;
+            color: #333;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ffed4a;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Luxury Shoe Store</h1>
+        <p>Discover our wide collection of stylish and elegant footwear</p>
+        <!-- <img src="c:\Users\hyper\Desktop\تنزيل (1).jpeg" alt=""> -->
+    </section>
+
+    <section id="products">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Our Products</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="c:\Users\hyper\Desktop\تنزيل (1).jpeg" alt="Sports Shoe">
+                <h3>Sports Shoe</h3>
+                <p>$299</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="c:\Users\hyper\Desktop\تنزيل (1).jpeg" alt="Classic Shoe">
+                <h3>Classic Shoe</h3>
+                <p>$399</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="c:\Users\hyper\Desktop\تنزيل (1).jpeg" alt="Casual Shoe">
+                <h3>Casual Shoe</h3>
+                <p>$349</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="c:\Users\hyper\Desktop\تنزيل (1).jpeg" alt="Casual Shoe">
+                <h3>Casual Shoe</h3>
+                <p>$349</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="c:\Users\hyper\Desktop\تنزيل (1).jpeg" alt="Casual Shoe">
+                <h3>Casual Shoe</h3>
+                <p>$349</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="c:\Users\hyper\Desktop\تنزيل (1).jpeg" alt="Casual Shoe">
+                <h3>Casual Shoe</h3>
+                <p>$349</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="c:\Users\hyper\Desktop\تنزيل (1).jpeg" alt="Casual Shoe">
+                <h3>Casual Shoe</h3>
+                <p>$349</p>
+                <button>Add to Cart</button>
+            </div><div class="product-card">
+                <img src="c:\Users\hyper\Desktop\تنزيل (1).jpeg" alt="Casual Shoe">
+                <h3>Casual Shoe</h3>
+                <p>$349</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a specialized store offering high-quality luxury footwear at competitive prices. Our diverse collection includes sports, classic, and casual shoes for both men and women. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit velit alias laboriosam officiis dolores. Omnis ut quibusdam impedit? Iure amet exercitationem maiores excepturi quae reiciendis reprehenderit tenetur illum atque distinctio?</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
